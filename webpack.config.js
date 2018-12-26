@@ -91,12 +91,12 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: "./src/html/index.html",
       filename: "./index.html"
-    })
+    }),
     // htmlを増やしてページを追加する場合はここに追加していく
     // 上の }) にカンマを付けるのを忘れずに
-    // new HtmlWebPackPlugin({
-    //   template: "./src/html/about/index.html",
-    //   filename: "./about/index.html"
-    // })
+    new HtmlWebPackPlugin({
+      template: "./src/html/about.html",
+      filename: "./about.html"
+    })
   ]
 };
